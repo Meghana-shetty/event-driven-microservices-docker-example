@@ -7,9 +7,9 @@ services:
       context: ./services/articles-management
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3010:3000"
     environment:
-      - PORT=3000
+      - PORT=3010
       - MESSAGE_BUS=amqp://rabbitmq
     links:
       - rabbitmq
