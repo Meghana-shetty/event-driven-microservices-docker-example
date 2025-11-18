@@ -9,7 +9,7 @@ services:
     ports:
       - "3010:3000"
     environment:
-      - PORT=3000
+      - PORT=3010
       - MESSAGE_BUS=amqp://rabbitmq
     links:
       - rabbitmq
@@ -22,7 +22,7 @@ services:
     ports:
       - "3001:3000"
     environment:
-      - PORT=3000
+      - PORT=3010
       - MESSAGE_BUS=amqp://rabbitmq
     links:
       - rabbitmq
@@ -35,7 +35,7 @@ services:
     ports:
       - "3002:3000"
     environment:
-      - PORT=3000
+      - PORT=3010
       - MESSAGE_BUS=amqp://rabbitmq
     links:
       - rabbitmq
@@ -48,7 +48,7 @@ services:
     ports:
       - "3003:3000"
     environment:
-      - PORT=3000
+      - PORT=3010
       - MESSAGE_BUS=amqp://rabbitmq
     links:
       - rabbitmq
